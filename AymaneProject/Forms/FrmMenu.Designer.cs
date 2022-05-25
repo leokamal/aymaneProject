@@ -1,6 +1,6 @@
-﻿namespace AymaneProject
+﻿namespace AymaneProject.Forms
 {
-    partial class Form1
+    partial class FrmMenu
     {
         /// <summary>
         /// Variable nécessaire au concepteur.
@@ -148,7 +148,7 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(748, 205);
             this.flowLayoutPanel1.TabIndex = 2;
             // 
-            // Form1
+            // FrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -161,7 +161,7 @@
             this.Controls.Add(this.metroCheckBox1);
             this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.panel1);
-            this.Name = "Form1";
+            this.Name = "FrmMenu";
             this.Text = "M E N U";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);

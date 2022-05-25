@@ -8,7 +8,8 @@ C:\myWorkSpace\C# - Workspace\AymaneProject\AymaneProject\obj\Debug\AymaneProjec
 C:\myWorkSpace\C# - Workspace\AymaneProject\AymaneProject\obj\Debug\AymaneProject.csproj.CoreCompileInputs.cache
 C:\myWorkSpace\C# - Workspace\AymaneProject\AymaneProject\obj\Debug\AymaneProject.exe
 C:\myWorkSpace\C# - Workspace\AymaneProject\AymaneProject\obj\Debug\AymaneProject.pdb
-C:\myWorkSpace\C# - Workspace\AymaneProject\AymaneProject\obj\Debug\AymaneProject.Form1.resources
 C:\myWorkSpace\C# - Workspace\AymaneProject\AymaneProject\bin\Debug\MetroFramework.dll
 C:\myWorkSpace\C# - Workspace\AymaneProject\AymaneProject\bin\Debug\MetroFramework.Fonts.dll
 C:\myWorkSpace\C# - Workspace\AymaneProject\AymaneProject\obj\Debug\AymaneProject.csproj.CopyComplete
+C:\myWorkSpace\C# - Workspace\AymaneProject\AymaneProject\obj\Debug\AymaneProject.Forms.FrmMenu.resources
+C:\myWorkSpace\C# - Workspace\AymaneProject\AymaneProject\obj\Debug\AymaneProject.UseControls.Uc_Theme.resources
