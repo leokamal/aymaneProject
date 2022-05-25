@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MetroFramework.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,7 +11,7 @@ using System.Windows.Forms;
 
 namespace AymaneProject
 {
-    public partial class Form1 : Form
+    public partial class Form1 : MetroForm
     {
         public Form1()
         {
@@ -21,6 +22,8 @@ namespace AymaneProject
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            this.MinimumSize = this.Size;
+
             for(int i = 0; i < 10; i++)
             {
                 Button btn = new Button();
@@ -35,6 +38,11 @@ namespace AymaneProject
                 //add Button to FlowLayoutPanel
                 this.flowLayoutPanel1.Controls.Add(btn);
             }
+        }
+
+        private void metroToggle1_CheckedChanged(object sender, EventArgs e)
+        {
+           this.Theme = (!this.metroToggle1.Checked) ? MetroFramework.MetroThemeStyle.Light: MetroFramework.MetroThemeStyle.Dark;
         }
     }
 }
