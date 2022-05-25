@@ -13,3 +13,5 @@ C:\myWorkSpace\C# - Workspace\AymaneProject\AymaneProject\bin\Debug\MetroFramewo
 C:\myWorkSpace\C# - Workspace\AymaneProject\AymaneProject\obj\Debug\AymaneProject.csproj.CopyComplete
 C:\myWorkSpace\C# - Workspace\AymaneProject\AymaneProject\obj\Debug\AymaneProject.Forms.FrmMenu.resources
 C:\myWorkSpace\C# - Workspace\AymaneProject\AymaneProject\obj\Debug\AymaneProject.UseControls.Uc_Theme.resources
+C:\myWorkSpace\C# - Workspace\AymaneProject\AymaneProject\obj\Debug\AymaneProject.Forms.FrmAccount.resources
+C:\myWorkSpace\C# - Workspace\AymaneProject\AymaneProject\obj\Debug\AymaneProject.Forms.FrmAbout.resources

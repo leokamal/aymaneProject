@@ -35,9 +35,10 @@
             this.metroComboBox1 = new MetroFramework.Controls.MetroComboBox();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
-            this.metroToggle1 = new MetroFramework.Controls.MetroToggle();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.uc_Theme1 = new AymaneProject.UseControls.Uc_Theme();
+            this.metroButton2 = new MetroFramework.Controls.MetroButton();
             this.panel1.SuspendLayout();
             this.metroPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -67,11 +68,12 @@
             // 
             // metroButton1
             // 
-            this.metroButton1.Location = new System.Drawing.Point(116, 414);
+            this.metroButton1.Location = new System.Drawing.Point(32, 402);
             this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(215, 54);
+            this.metroButton1.Size = new System.Drawing.Size(141, 32);
             this.metroButton1.TabIndex = 3;
             this.metroButton1.Text = "metroButton1";
+            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
             // metroCheckBox1
             // 
@@ -109,20 +111,10 @@
             this.metroTextBox1.TabIndex = 7;
             this.metroTextBox1.Text = "metroTextBox1";
             // 
-            // metroToggle1
-            // 
-            this.metroToggle1.AutoSize = true;
-            this.metroToggle1.Location = new System.Drawing.Point(626, 412);
-            this.metroToggle1.Name = "metroToggle1";
-            this.metroToggle1.Size = new System.Drawing.Size(80, 17);
-            this.metroToggle1.TabIndex = 8;
-            this.metroToggle1.Text = "Off";
-            this.metroToggle1.UseVisualStyleBackColor = true;
-            this.metroToggle1.CheckedChanged += new System.EventHandler(this.metroToggle1_CheckedChanged);
-            // 
             // metroPanel1
             // 
-            this.metroPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.metroPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.metroPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.metroPanel1.Controls.Add(this.flowLayoutPanel1);
@@ -148,13 +140,30 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(748, 205);
             this.flowLayoutPanel1.TabIndex = 2;
             // 
+            // uc_Theme1
+            // 
+            this.uc_Theme1.Location = new System.Drawing.Point(278, 19);
+            this.uc_Theme1.Name = "uc_Theme1";
+            this.uc_Theme1.Size = new System.Drawing.Size(188, 24);
+            this.uc_Theme1.TabIndex = 10;
+            // 
+            // metroButton2
+            // 
+            this.metroButton2.Location = new System.Drawing.Point(203, 402);
+            this.metroButton2.Name = "metroButton2";
+            this.metroButton2.Size = new System.Drawing.Size(141, 32);
+            this.metroButton2.TabIndex = 11;
+            this.metroButton2.Text = "metroButton2";
+            this.metroButton2.Click += new System.EventHandler(this.metroButton2_Click);
+            // 
             // FrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(791, 558);
+            this.Controls.Add(this.metroButton2);
+            this.Controls.Add(this.uc_Theme1);
             this.Controls.Add(this.metroPanel1);
-            this.Controls.Add(this.metroToggle1);
             this.Controls.Add(this.metroTextBox1);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.metroComboBox1);
@@ -181,9 +190,10 @@
         private MetroFramework.Controls.MetroComboBox metroComboBox1;
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroTextBox metroTextBox1;
-        private MetroFramework.Controls.MetroToggle metroToggle1;
         private MetroFramework.Controls.MetroPanel metroPanel1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private UseControls.Uc_Theme uc_Theme1;
+        private MetroFramework.Controls.MetroButton metroButton2;
     }
 }
 

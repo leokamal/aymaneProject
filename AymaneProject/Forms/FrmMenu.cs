@@ -39,12 +39,18 @@ namespace AymaneProject.Forms
             }
         }
 
-        private void metroToggle1_CheckedChanged(object sender, EventArgs e)
+        private void metroButton1_Click(object sender, EventArgs e)
         {
-            this.Theme = (!this.metroToggle1.Checked) ? MetroFramework.MetroThemeStyle.Light : MetroFramework.MetroThemeStyle.Dark;
-            this.metroComboBox1.Theme = (!this.metroToggle1.Checked) ? MetroFramework.MetroThemeStyle.Light : MetroFramework.MetroThemeStyle.Dark;
+            FrmAccount frmAccount = new FrmAccount();
+            frmAccount.Text = "Formulaire account";
+            frmAccount.Show();
         }
 
-       
+        private void metroButton2_Click(object sender, EventArgs e)
+        {
+            FrmAbout frmAbout = new FrmAbout();
+            frmAbout.Text = "Formulaire About";
+            frmAbout.Show();
+        }
     }
 }

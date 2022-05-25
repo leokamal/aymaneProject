@@ -17,6 +17,7 @@ namespace AymaneProject.UseControls
         public Uc_Theme()
         {
             InitializeComponent();
+            this.metroLabel1.Text = (this.metroToggle1.Checked) ? "Light" : "Dark";
         }
 
         private void metroToggle1_CheckedChanged(object sender, EventArgs e)
@@ -25,22 +26,23 @@ namespace AymaneProject.UseControls
             if(this.Parent is MetroForm)
             {
                 ((MetroForm)this.Parent).Theme = (!this.metroToggle1.Checked) ? MetroFramework.MetroThemeStyle.Light : MetroFramework.MetroThemeStyle.Dark;
-
-                foreach (var ctrl in (this.Parent as MetroForm).Controls)
+                foreach (Control ctrl in ((MetroForm)this.Parent).Controls)
                 {
-                    if(ctrl is MetroLabel)
-                        ((MetroLabel)ctrl).Theme = (!this.metroToggle1.Checked) ? MetroFramework.MetroThemeStyle.Light : MetroFramework.MetroThemeStyle.Dark;
-                    if (ctrl is MetroButton)
-                        ((MetroButton)ctrl).Theme = (!this.metroToggle1.Checked) ? MetroFramework.MetroThemeStyle.Light : MetroFramework.MetroThemeStyle.Dark;
-                    if (ctrl is MetroComboBox)
-                        ((MetroComboBox)ctrl).Theme = (!this.metroToggle1.Checked) ? MetroFramework.MetroThemeStyle.Light : MetroFramework.MetroThemeStyle.Dark;
-                    if (ctrl is MetroCheckBox)
-                        ((MetroCheckBox)ctrl).Theme = (!this.metroToggle1.Checked) ? MetroFramework.MetroThemeStyle.Light : MetroFramework.MetroThemeStyle.Dark;
-                    if (ctrl is MetroRadioButton)
-                        ((MetroRadioButton)ctrl).Theme = (!this.metroToggle1.Checked) ? MetroFramework.MetroThemeStyle.Light : MetroFramework.MetroThemeStyle.Dark;
+                    setTheme(ctrl);
+                }
 
+                foreach (var item in ((MetroForm)this.Parent).Controls)
+                {
+                    if (item is Panel)
+                    {
+                        ((Panel)item).BackColor = Color.Transparent;
+                        foreach (Control ctrl in ((Panel)item).Controls)
+                        {
+                            setTheme(ctrl);
+                        }
+                    }
 
-              }
+                }
 
 
 
@@ -58,5 +60,23 @@ namespace AymaneProject.UseControls
 
         
         }
+        private void setTheme(Control ctrl)
+        {
+            
+           
+            if (ctrl is MetroLabel)
+                ((MetroLabel)ctrl).Theme = (!this.metroToggle1.Checked) ? MetroFramework.MetroThemeStyle.Light : MetroFramework.MetroThemeStyle.Dark;
+            if (ctrl is MetroButton)
+                ((MetroButton)ctrl).Theme = (!this.metroToggle1.Checked) ? MetroFramework.MetroThemeStyle.Light : MetroFramework.MetroThemeStyle.Dark;
+            if (ctrl is MetroComboBox)
+                ((MetroComboBox)ctrl).Theme = (!this.metroToggle1.Checked) ? MetroFramework.MetroThemeStyle.Light : MetroFramework.MetroThemeStyle.Dark;
+            if (ctrl is MetroCheckBox)
+                ((MetroCheckBox)ctrl).Theme = (!this.metroToggle1.Checked) ? MetroFramework.MetroThemeStyle.Light : MetroFramework.MetroThemeStyle.Dark;
+            if (ctrl is MetroRadioButton)
+                ((MetroRadioButton)ctrl).Theme = (!this.metroToggle1.Checked) ? MetroFramework.MetroThemeStyle.Light : MetroFramework.MetroThemeStyle.Dark;
+            if (ctrl is MetroTextBox)
+                ((MetroTextBox)ctrl).Theme = (!this.metroToggle1.Checked) ? MetroFramework.MetroThemeStyle.Light : MetroFramework.MetroThemeStyle.Dark;
+            }
+        }
     }
-}
+
