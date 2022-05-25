@@ -1,0 +1,11 @@
+C:\myWorkSpace\C# - Workspace\AymaneProject\AymaneProject\bin\Debug\AymaneProject.exe.config
+C:\myWorkSpace\C# - Workspace\AymaneProject\AymaneProject\bin\Debug\AymaneProject.exe
+C:\myWorkSpace\C# - Workspace\AymaneProject\AymaneProject\bin\Debug\AymaneProject.pdb
+C:\myWorkSpace\C# - Workspace\AymaneProject\AymaneProject\obj\Debug\AymaneProject.csproj.AssemblyReference.cache
+C:\myWorkSpace\C# - Workspace\AymaneProject\AymaneProject\obj\Debug\AymaneProject.csproj.SuggestedBindingRedirects.cache
+C:\myWorkSpace\C# - Workspace\AymaneProject\AymaneProject\obj\Debug\AymaneProject.Properties.Resources.resources
+C:\myWorkSpace\C# - Workspace\AymaneProject\AymaneProject\obj\Debug\AymaneProject.csproj.GenerateResource.cache
+C:\myWorkSpace\C# - Workspace\AymaneProject\AymaneProject\obj\Debug\AymaneProject.csproj.CoreCompileInputs.cache
+C:\myWorkSpace\C# - Workspace\AymaneProject\AymaneProject\obj\Debug\AymaneProject.exe
+C:\myWorkSpace\C# - Workspace\AymaneProject\AymaneProject\obj\Debug\AymaneProject.pdb
+C:\myWorkSpace\C# - Workspace\AymaneProject\AymaneProject\obj\Debug\AymaneProject.Form1.resources
